@@ -16,12 +16,12 @@ public class CollateralController {
         this.collateralService = service;
     }
 
-	/**
-	 * Endpoint to retrieve collateral values for given account IDs.
-	 *
-	 * @param accountIds List of account IDs in request body
-	 * @return List of collateral responses for each account
-	 */
+    /**
+     * Endpoint to retrieve collateral values for given account IDs.
+     *
+     * @param accountIds List of account IDs in request body
+     * @return List of collateral responses for each account
+     */
     @PostMapping("/collateral")
     public List<CollateralResponse> getCollateral(@RequestBody CollateralRequest request) {
 		System.out.println("Received accounts: " + request.accountIds());

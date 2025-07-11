@@ -51,7 +51,7 @@ class CollateralServiceTest {
         // Mock prices
         List<PriceResponse> prices = List.of(
             new PriceResponse("S1", 100.0),
-			new PriceResponse("S2", 50.0)
+            new PriceResponse("S2", 50.0)
         );
 
         // Mock eligibility
