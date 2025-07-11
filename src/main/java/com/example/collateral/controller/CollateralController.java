@@ -24,7 +24,7 @@ public class CollateralController {
      */
     @PostMapping("/collateral")
     public List<CollateralResponse> getCollateral(@RequestBody CollateralRequest request) {
-		System.out.println("Received accounts: " + request.accountIds());
-		return collateralService.calculateCollateral(request.accountIds());
+        System.out.println("Received accounts: " + request.accountIds());
+        return collateralService.calculateCollateral(request.accountIds());
     }
 }
